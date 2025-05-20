@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+.card {
+    padding: 2em;
+}
+
+.button {
+    @apply border-blue-300 border-1 rounded-md p-2 text-2xl cursor-pointer hover:bg-blue-300;
+}
