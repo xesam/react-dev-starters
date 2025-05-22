@@ -54,6 +54,9 @@ function App() {
             <RouteNavigation />
             <div className="flex-1 flex flex-col items-center card text-center gap-4">
                 <div>Hello "/index.tsx"!</div>
+                <div className={'text-left'}>
+                    current env is: <pre>{JSON.stringify(import.meta.env, null, 4)}</pre>
+                </div>
                 <h3 className="text-2xl font-bold">count is {count}</h3>
                 <div className={'flex gap-4'}>
                     <button className="button" onClick={() => increment()}>
