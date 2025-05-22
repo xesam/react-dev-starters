@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:stage": "cross-env VITE_NAME=stage vite",
+    "dev:staging": "cross-env vite --mode staging",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
