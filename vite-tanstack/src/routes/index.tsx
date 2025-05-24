@@ -29,7 +29,7 @@ function RouteView({ route }: { route: RouteType }) {
         );
     }
     return (
-        <Link to={route.path} className="[&.active]:font-bold">
+        <Link to={route.to.toString()} className="[&.active]:font-bold">
             <li className="py-0.5 text-blue-500 underline hover:text-xl">{route.to}</li>
         </Link>
     );
